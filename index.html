@@ -4,12 +4,12 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>SMOUJ · Todos mis enlaces</title>
-<meta name="description" content="Videojuegos, software, IA local y experimentos. Todos los enlaces de SMOUJ en un solo lugar." />
+<meta name="description" content="Videojuegos, software, IA local y proyectos como Project Infest y DBZ LSW. Todos los enlaces de SMOUJ en un solo lugar." />
 <link rel="canonical" href="https://smouj.github.io/" />
 <meta name="theme-color" content="#07080b" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="SMOUJ · Todos mis enlaces" />
-<meta property="og:description" content="Videojuegos, software, IA local y experimentos. Un solo enlace para encontrarme." />
+<meta property="og:description" content="Videojuegos, software, IA local y proyectos como Project Infest y DBZ LSW. Un solo enlace para encontrarme." />
 <meta property="og:url" content="https://smouj.github.io/" />
 <meta property="og:image" content="https://smouj.github.io/assets/og.png" />
 <meta property="og:image:width" content="1200" />
@@ -57,7 +57,7 @@
 
 <header class="topbar">
   <a class="brand" href="/" aria-label="Inicio">
-    <span class="brand-mark" aria-hidden="true">S</span>
+    <img class="brand-mark" src="assets/avatar.png" alt="" width="30" height="30" />
     <span class="brand-text">SMOUJ013</span>
   </a>
   <button class="icon-btn" id="theme-toggle" type="button" aria-label="Cambiar a tema claro" aria-pressed="false">
@@ -89,17 +89,115 @@
   </section>
 
   <section class="project reveal" style="--i:0" aria-labelledby="project-title">
-    <p class="kicker">PROYECTO DESTACADO</p>
-    <h2 id="project-title">Project Infest</h2>
-    <p class="project-copy">Mi proyecto principal: un RPG de infestación y supervivencia. Diario de desarrollo, capturas y avances reales.</p>
-    <div class="chips">
-      <a class="chip" href="https://x.com/project_infest" target="_blank" rel="noopener">X <span>@project_infest</span></a>
-      <a class="chip" href="https://www.reddit.com/r/project_infest/" target="_blank" rel="noopener">Reddit <span>r/project_infest</span></a>
-      <a class="chip" href="https://bsky.app/profile/projectinfest.bsky.social" target="_blank" rel="noopener">Bluesky <span>@projectinfest</span></a>
+    <div class="project-heading">
+      <img class="project-logo" src="assets/projects/project-infest/logo.png" alt="Logotipo de Project Infest" width="144" height="144" decoding="async" />
+      <div class="project-intro">
+        <p class="kicker">PROYECTO DESTACADO · EN DESARROLLO</p>
+        <h2 id="project-title">Project Infest</h2>
+        <p class="project-copy">Un RPG de infestación y supervivencia. Explora las capturas y sigue el desarrollo del proyecto.</p>
+        <div class="chips">
+          <a class="chip" href="https://x.com/project_infest" target="_blank" rel="noopener">X <span>@project_infest</span></a>
+          <a class="chip" href="https://www.reddit.com/r/project_infest/" target="_blank" rel="noopener">Reddit <span>r/project_infest</span></a>
+          <a class="chip" href="https://bsky.app/profile/projectinfest.bsky.social" target="_blank" rel="noopener">Bluesky <span>@projectinfest</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-gallery" data-gallery role="region" aria-label="Galería de capturas de Project Infest">
+      <div class="gallery-stage">
+        <figure class="gallery-slide" data-gallery-slide aria-label="1 de 4: Mapa de destinos">
+          <img src="assets/projects/project-infest/mapa-de-destinos.png" alt="Mapa de destinos y rutas disponible desde la base de operaciones." width="1280" height="720" loading="lazy" decoding="async" />
+          <figcaption>Mapa de operaciones</figcaption>
+        </figure>
+        <figure class="gallery-slide" data-gallery-slide aria-label="2 de 4: Salida de la base" hidden>
+          <img src="assets/projects/project-infest/salida-de-base.png" alt="Confirmación de salida desde la base antes de viajar a una zona." width="1280" height="720" loading="lazy" decoding="async" />
+          <figcaption>Preparar una salida</figcaption>
+        </figure>
+        <figure class="gallery-slide" data-gallery-slide aria-label="3 de 4: Recuperación de muestras" hidden>
+          <img src="assets/projects/project-infest/recuperacion-de-muestras.png" alt="Resumen de especímenes recuperados al volver a la base." width="1280" height="720" loading="lazy" decoding="async" />
+          <figcaption>Recuperación de muestras</figcaption>
+        </figure>
+        <figure class="gallery-slide" data-gallery-slide aria-label="4 de 4: Ferretería y equipo" hidden>
+          <img src="assets/projects/project-infest/ferreteria-y-equipo.png" alt="Selección de una herramienta en la ferretería del juego." width="1280" height="720" loading="lazy" decoding="async" />
+          <figcaption>Equipo y suministros</figcaption>
+        </figure>
+      </div>
+      <div class="gallery-meta">
+        <div class="gallery-dots" role="group" aria-label="Elegir captura">
+          <button class="gallery-dot" type="button" data-gallery-dot="0" aria-label="Mostrar captura 1 de 4" aria-pressed="true"></button>
+          <button class="gallery-dot" type="button" data-gallery-dot="1" aria-label="Mostrar captura 2 de 4" aria-pressed="false"></button>
+          <button class="gallery-dot" type="button" data-gallery-dot="2" aria-label="Mostrar captura 3 de 4" aria-pressed="false"></button>
+          <button class="gallery-dot" type="button" data-gallery-dot="3" aria-label="Mostrar captura 4 de 4" aria-pressed="false"></button>
+        </div>
+        <div class="gallery-controls">
+          <span class="gallery-count" data-gallery-count aria-live="polite">01 / 04</span>
+          <button class="gallery-control" type="button" data-gallery-prev aria-label="Captura anterior">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <button class="gallery-control" type="button" data-gallery-next aria-label="Captura siguiente">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="group reveal" style="--i:1" aria-labelledby="redes-title">
+  <section class="project project-dbz reveal" style="--i:1" aria-labelledby="dbz-project-title">
+    <div class="project-heading">
+      <img class="project-logo" src="assets/projects/dbz-lsw/logo.png" alt="Icono del fangame DBZ LSW" width="144" height="144" decoding="async" />
+      <div class="project-intro">
+        <p class="kicker">FANGAME NO OFICIAL · EN DESARROLLO</p>
+        <h2 id="dbz-project-title">DBZ LSW Fangame</h2>
+        <p class="project-copy">Remake para escritorio inspirado en <em>Dragon Ball Z: Legendary Super Warriors</em> (Game Boy Color), con combate táctico por cartas. Sigue en desarrollo y aún no ejecuta una ROM.</p>
+        <div class="chips">
+          <a class="chip" href="https://github.com/smouj/dbzlsw-online" target="_blank" rel="noopener">GitHub <span>Repositorio</span></a>
+          <a class="chip" href="https://www.reddit.com/r/dbz/" target="_blank" rel="noopener">Reddit <span>r/dbz</span></a>
+          <a class="chip" href="https://x.com/Smouj_013" target="_blank" rel="me noopener">X <span>@Smouj_013</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-gallery" data-gallery role="region" aria-label="Galería de capturas históricas de DBZ LSW">
+      <div class="gallery-stage">
+        <figure class="gallery-slide" data-gallery-slide aria-label="1 de 4: Combate">
+          <img src="assets/projects/dbz-lsw/combate.png" alt="Captura histórica de un combate entre Gohan Niño y Piccolo en la arena." width="1410" height="792" loading="lazy" decoding="async" />
+          <figcaption>Combate por cartas</figcaption>
+        </figure>
+        <figure class="gallery-slide" data-gallery-slide aria-label="2 de 4: Selección de personajes" hidden>
+          <img src="assets/projects/dbz-lsw/personajes.png" alt="Captura histórica de la selección de personajes y la ficha de Gohan Niño." width="1410" height="792" loading="lazy" decoding="async" />
+          <figcaption>Personajes y formas</figcaption>
+        </figure>
+        <figure class="gallery-slide" data-gallery-slide aria-label="3 de 4: Editor de mazo" hidden>
+          <img src="assets/projects/dbz-lsw/mazo.png" alt="Captura histórica del editor de mazos y sus cartas de combate." width="1410" height="792" loading="lazy" decoding="async" />
+          <figcaption>Editor de mazos</figcaption>
+        </figure>
+        <figure class="gallery-slide" data-gallery-slide aria-label="4 de 4: Modo historia" hidden>
+          <img src="assets/projects/dbz-lsw/historia.png" alt="Captura histórica del modo historia y sus capítulos." width="1410" height="792" loading="lazy" decoding="async" />
+          <figcaption>Modo historia</figcaption>
+        </figure>
+      </div>
+      <div class="gallery-meta">
+        <div class="gallery-dots" role="group" aria-label="Elegir captura de DBZ LSW">
+          <button class="gallery-dot" type="button" data-gallery-dot="0" aria-label="Mostrar captura 1 de 4" aria-pressed="true"></button>
+          <button class="gallery-dot" type="button" data-gallery-dot="1" aria-label="Mostrar captura 2 de 4" aria-pressed="false"></button>
+          <button class="gallery-dot" type="button" data-gallery-dot="2" aria-label="Mostrar captura 3 de 4" aria-pressed="false"></button>
+          <button class="gallery-dot" type="button" data-gallery-dot="3" aria-label="Mostrar captura 4 de 4" aria-pressed="false"></button>
+        </div>
+        <div class="gallery-controls">
+          <span class="gallery-count" data-gallery-count aria-live="polite">01 / 04</span>
+          <button class="gallery-control" type="button" data-gallery-prev aria-label="Captura anterior">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <button class="gallery-control" type="button" data-gallery-next aria-label="Captura siguiente">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+      <p class="gallery-note">Capturas históricas de referencia del 31 de agosto de 2026; la interfaz del proyecto ha evolucionado desde entonces.</p>
+    </div>
+  </section>
+
+  <section class="group reveal" style="--i:2" aria-labelledby="redes-title">
     <div class="group-head"><h2 id="redes-title">Redes</h2><span>7</span></div>
     <ul class="grid">
       <li><a class="card" data-brand="x" href="https://x.com/Smouj_013" target="_blank" rel="me noopener">
@@ -140,7 +238,7 @@
     </ul>
   </section>
 
-  <section class="group reveal" style="--i:2" aria-labelledby="codigo-title">
+  <section class="group reveal" style="--i:3" aria-labelledby="codigo-title">
     <div class="group-head"><h2 id="codigo-title">Código</h2><span>2</span></div>
     <ul class="grid">
       <li><a class="card" data-brand="github" href="https://github.com/smouj" target="_blank" rel="me noopener">
@@ -156,7 +254,7 @@
     </ul>
   </section>
 
-  <section class="group reveal" style="--i:3" aria-labelledby="comunidad-title">
+  <section class="group reveal" style="--i:4" aria-labelledby="comunidad-title">
     <div class="group-head"><h2 id="comunidad-title">Comunidad</h2><span>1</span></div>
     <ul class="grid">
       <li><a class="card" data-brand="discord" href="https://discord.gg/BVWXWY5eUT" target="_blank" rel="noopener">
@@ -167,7 +265,7 @@
     </ul>
   </section>
 
-  <section class="group reveal" style="--i:4" aria-labelledby="apoyo-title">
+  <section class="group reveal" style="--i:5" aria-labelledby="apoyo-title">
     <div class="group-head"><h2 id="apoyo-title">Apoyo</h2><span>1</span></div>
     <ul class="grid">
       <li><a class="card" data-brand="paypal" href="https://www.paypal.com/ncp/payment/XUY7RB9X2JE2G" target="_blank" rel="noopener">
@@ -180,7 +278,7 @@
 </main>
 
 <footer class="footer">
-  <p>© <span id="year">2026</span> SMOUJ · Hecho a mano, sin plantillas.</p>
+  <p>© <span id="year">2026</span> SMOUJ.</p>
   <p class="footer-links">
     <a href="https://github.com/smouj/smouj.github.io" target="_blank" rel="noopener">Código de esta página</a>
     <span aria-hidden="true">·</span>

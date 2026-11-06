@@ -62,4 +62,47 @@
 
   var year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
+
+  document.querySelectorAll("[data-gallery]").forEach(function (gallery) {
+    var slides = Array.from(gallery.querySelectorAll("[data-gallery-slide]"));
+    var dots = Array.from(gallery.querySelectorAll("[data-gallery-dot]"));
+    var count = gallery.querySelector("[data-gallery-count]");
+    var previous = gallery.querySelector("[data-gallery-prev]");
+    var next = gallery.querySelector("[data-gallery-next]");
+    var activeIndex = 0;
+
+    if (!slides.length) return;
+
+    function showSlide(index) {
+      activeIndex = (index + slides.length) % slides.length;
+      slides.forEach(function (slide, slideIndex) {
+        var active = slideIndex === activeIndex;
+        slide.hidden = !active;
+        slide.setAttribute("aria-hidden", String(!active));
+      });
+      dots.forEach(function (dot, dotIndex) {
+        dot.setAttribute("aria-pressed", String(dotIndex === activeIndex));
+      });
+      if (count) {
+        count.textContent = String(activeIndex + 1).padStart(2, "0") + " / " + String(slides.length).padStart(2, "0");
+      }
+    }
+
+    if (previous) previous.addEventListener("click", function () { showSlide(activeIndex - 1); });
+    if (next) next.addEventListener("click", function () { showSlide(activeIndex + 1); });
+    dots.forEach(function (dot, index) {
+      dot.addEventListener("click", function () { showSlide(index); });
+    });
+    gallery.addEventListener("keydown", function (event) {
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        showSlide(activeIndex - 1);
+      } else if (event.key === "ArrowRight") {
+        event.preventDefault();
+        showSlide(activeIndex + 1);
+      }
+    });
+
+    showSlide(0);
+  });
 })();
