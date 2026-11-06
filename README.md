@@ -32,8 +32,8 @@ atributos `data-gallery` para que funcionen los controles independientes de la g
 Project Infest muestra su logotipo y capturas de desarrollo. DBZ LSW muestra el icono de la
 aplicación de su repositorio y cuatro capturas históricas del 31 de agosto de 2026. El propio
 proyecto aclara que esas imágenes no representan la interfaz actual; por eso están marcadas
-como referencia en la página. Su tarjeta enlaza al repositorio, al perfil X de SMOUJ y a
-`r/dbz`, subreddit indicado en el borrador de publicación del proyecto.
+como referencia en la página. Su tarjeta enlaza al repositorio del fangame, a
+`r/DBZ_LSW_FANGAME` y al canal X `@dbz_lsw`.
 
 Los iconos sociales proceden de Simple Icons (CC0). El avatar y los recursos de Project
 Infest pertenecen a sus respectivos autores. Dragon Ball Z, sus personajes y las imágenes
