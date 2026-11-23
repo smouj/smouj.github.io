@@ -79,11 +79,23 @@ a { color: inherit; }
   width: 420px; height: 420px;
   left: -140px; top: -120px;
   background: radial-gradient(circle at 30% 30%, rgba(242, 169, 59, .55), transparent 65%);
+  animation: ambient-drift-a 42s ease-in-out infinite alternate;
 }
 .orb-b {
   width: 520px; height: 520px;
   right: -200px; top: 120px;
   background: radial-gradient(circle at 60% 40%, rgba(88, 101, 242, .35), transparent 65%);
+  animation: ambient-drift-b 56s ease-in-out infinite alternate;
+}
+
+@keyframes ambient-drift-a {
+  from { transform: translate3d(0, 0, 0) scale(.98); }
+  to { transform: translate3d(24px, 18px, 0) scale(1.04); }
+}
+
+@keyframes ambient-drift-b {
+  from { transform: translate3d(0, 0, 0) scale(1.02); }
+  to { transform: translate3d(-28px, 20px, 0) scale(.97); }
 }
 
 .grain {
@@ -265,6 +277,30 @@ h1 {
 .project-dbz .gallery-dot[aria-pressed="true"] { background: var(--project-accent); }
 .project-dbz .gallery-control:hover { color: var(--project-accent); }
 [data-theme="light"] .project-dbz { --project-accent: #267aa1; }
+
+.project-yermo {
+  --project-accent: #c4864e;
+  border-color: color-mix(in srgb, var(--project-accent) 30%, var(--line));
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--project-accent) 9%, transparent), transparent 70%),
+    color-mix(in srgb, var(--surface) 92%, transparent);
+}
+.project-yermo .kicker { color: var(--project-accent); }
+.project-yermo .project-logo { filter: drop-shadow(0 8px 20px rgba(188, 115, 52, .18)); }
+.project-yermo .gallery-dot[aria-pressed="true"] { background: var(--project-accent); }
+.project-yermo .gallery-control:hover { color: var(--project-accent); }
+.project-yermo .project-tag {
+  display: inline-flex;
+  align-items: baseline;
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--bg) 55%, transparent);
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 600;
+}
+[data-theme="light"] .project-yermo { --project-accent: #a96135; }
 
 .project-heading {
   display: grid;
@@ -531,6 +567,7 @@ h1 {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .orb-a, .orb-b { animation: none !important; }
   *, *::before, *::after { animation-duration: .001ms !important; animation-delay: 0ms !important; transition-duration: .001ms !important; }
 }
 

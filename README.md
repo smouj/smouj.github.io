@@ -29,6 +29,8 @@ atributos `data-gallery` para que funcionen los controles independientes de la g
 
 ## Proyectos destacados
 
+YERMO · Frontera de Ceniza muestra la marca oficial y cuatro capturas de la revisión del prototipo local del 23 de noviembre de 2026. El juego sigue en desarrollo para un jugador; su visión MMORPG es futura. El repositorio de YERMO es privado, así que la tarjeta no enlaza a él.
+
 Project Infest muestra su logotipo y capturas de desarrollo. DBZ LSW muestra el icono de la
 aplicación de su repositorio y cuatro capturas históricas del 31 de agosto de 2026. El propio
 proyecto aclara que esas imágenes no representan la interfaz actual; por eso están marcadas

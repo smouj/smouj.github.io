@@ -4,12 +4,12 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>SMOUJ · Todos mis enlaces</title>
-<meta name="description" content="Videojuegos, software, IA local y proyectos como Project Infest y DBZ LSW. Todos los enlaces de SMOUJ en un solo lugar." />
+<meta name="description" content="Videojuegos, software, IA local y proyectos como YERMO, Project Infest y DBZ LSW. Todos los enlaces de SMOUJ en un solo lugar." />
 <link rel="canonical" href="https://smouj.github.io/" />
 <meta name="theme-color" content="#07080b" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="SMOUJ · Todos mis enlaces" />
-<meta property="og:description" content="Videojuegos, software, IA local y proyectos como Project Infest y DBZ LSW. Un solo enlace para encontrarme." />
+<meta property="og:description" content="Videojuegos, software, IA local y proyectos como YERMO, Project Infest y DBZ LSW. Un solo enlace para encontrarme." />
 <meta property="og:url" content="https://smouj.github.io/" />
 <meta property="og:image" content="https://smouj.github.io/assets/og.png" />
 <meta property="og:image:width" content="1200" />
@@ -197,7 +197,61 @@
     </div>
   </section>
 
-  <section class="group reveal" style="--i:2" aria-labelledby="redes-title">
+  <section class="project project-yermo reveal" style="--i:2" aria-labelledby="yermo-project-title">
+    <div class="project-heading">
+      <img class="project-logo" src="assets/projects/yermo/logo.png" alt="Logotipo de YERMO" width="132" height="132" decoding="async" />
+      <div class="project-intro">
+        <p class="kicker">PROTOTIPO LOCAL · EN DESARROLLO</p>
+        <h2 id="yermo-project-title">YERMO: Frontera de Ceniza</h2>
+        <p class="project-copy">RPG de acción en tercera persona con ambientación de western de ciencia ficción. El prototipo actual es local y para un jugador; la visión MMORPG queda para el futuro.</p>
+        <div class="chips" role="group" aria-label="Estado de YERMO">
+          <span class="project-tag">Prototipo local</span>
+          <span class="project-tag">Un jugador</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-gallery" data-gallery role="region" aria-label="Galería de capturas de YERMO">
+      <div class="gallery-stage">
+        <figure class="gallery-slide" data-gallery-slide aria-label="1 de 4: Poblado de Ceniza">
+          <img src="assets/projects/yermo/ceniza-poblado.png" alt="El personaje explora un poblado de frontera en la región de Ceniza." width="1280" height="720" loading="lazy" decoding="async" />
+          <figcaption>Poblado de Ceniza</figcaption>
+        </figure>
+        <figure class="gallery-slide" data-gallery-slide aria-label="2 de 4: Capilla de Ceniza" hidden>
+          <img src="assets/projects/yermo/ceniza-este.png" alt="Personaje y habitante junto a una capilla en el asentamiento de Ceniza." width="1280" height="720" loading="lazy" decoding="async" />
+          <figcaption>Encuentro en la frontera</figcaption>
+        </figure>
+        <figure class="gallery-slide" data-gallery-slide aria-label="3 de 4: Cañones de Ceniza" hidden>
+          <img src="assets/projects/yermo/ceniza-vegetacion.png" alt="El viajero recorre un cañón desértico con vegetación dispersa." width="1280" height="720" loading="lazy" decoding="async" />
+          <figcaption>Exploración del desierto</figcaption>
+        </figure>
+        <figure class="gallery-slide" data-gallery-slide aria-label="4 de 4: Creación de personaje" hidden>
+          <img src="assets/projects/yermo/creacion-personaje.png" alt="Pantalla de creación de personaje con un viajero en el centro y opciones de origen." width="1280" height="720" loading="lazy" decoding="async" />
+          <figcaption>Creación de personaje</figcaption>
+        </figure>
+      </div>
+      <div class="gallery-meta">
+        <div class="gallery-dots" role="group" aria-label="Elegir captura de YERMO">
+          <button class="gallery-dot" type="button" data-gallery-dot="0" aria-label="Mostrar captura 1 de 4" aria-pressed="true"></button>
+          <button class="gallery-dot" type="button" data-gallery-dot="1" aria-label="Mostrar captura 2 de 4" aria-pressed="false"></button>
+          <button class="gallery-dot" type="button" data-gallery-dot="2" aria-label="Mostrar captura 3 de 4" aria-pressed="false"></button>
+          <button class="gallery-dot" type="button" data-gallery-dot="3" aria-label="Mostrar captura 4 de 4" aria-pressed="false"></button>
+        </div>
+        <div class="gallery-controls">
+          <span class="gallery-count" data-gallery-count aria-live="polite">01 / 04</span>
+          <button class="gallery-control" type="button" data-gallery-prev aria-label="Captura anterior">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <button class="gallery-control" type="button" data-gallery-next aria-label="Captura siguiente">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+      <p class="gallery-note">Capturas de la revisión del prototipo del 23 de noviembre de 2026.</p>
+    </div>
+  </section>
+
+  <section class="group reveal" style="--i:3" aria-labelledby="redes-title">
     <div class="group-head"><h2 id="redes-title">Redes</h2><span>7</span></div>
     <ul class="grid">
       <li><a class="card" data-brand="x" href="https://x.com/Smouj_013" target="_blank" rel="me noopener">
@@ -238,7 +292,7 @@
     </ul>
   </section>
 
-  <section class="group reveal" style="--i:3" aria-labelledby="codigo-title">
+  <section class="group reveal" style="--i:4" aria-labelledby="codigo-title">
     <div class="group-head"><h2 id="codigo-title">Código</h2><span>2</span></div>
     <ul class="grid">
       <li><a class="card" data-brand="github" href="https://github.com/smouj" target="_blank" rel="me noopener">
@@ -254,7 +308,7 @@
     </ul>
   </section>
 
-  <section class="group reveal" style="--i:4" aria-labelledby="comunidad-title">
+  <section class="group reveal" style="--i:5" aria-labelledby="comunidad-title">
     <div class="group-head"><h2 id="comunidad-title">Comunidad</h2><span>1</span></div>
     <ul class="grid">
       <li><a class="card" data-brand="discord" href="https://discord.gg/BVWXWY5eUT" target="_blank" rel="noopener">
@@ -265,7 +319,7 @@
     </ul>
   </section>
 
-  <section class="group reveal" style="--i:5" aria-labelledby="apoyo-title">
+  <section class="group reveal" style="--i:6" aria-labelledby="apoyo-title">
     <div class="group-head"><h2 id="apoyo-title">Apoyo</h2><span>1</span></div>
     <ul class="grid">
       <li><a class="card" data-brand="paypal" href="https://www.paypal.com/ncp/payment/XUY7RB9X2JE2G" target="_blank" rel="noopener">
