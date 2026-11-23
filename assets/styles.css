@@ -492,6 +492,7 @@ h1 {
 .card:hover .chev { transform: translateX(3px); opacity: 1; stroke: var(--brand, var(--accent)); }
 
 .card[data-brand="x"] { --brand: #ffffff; }
+.card[data-brand="mastodon"] { --brand: #6364ff; }
 .card[data-brand="bluesky"] { --brand: #1185fe; }
 .card[data-brand="instagram"] { --brand: #e4405f; }
 .card[data-brand="threads"] { --brand: #ffffff; }

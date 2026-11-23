@@ -8,6 +8,7 @@ html = html_path.read_text(encoding="utf-8")
 icons = root / "assets" / "icons"
 files = {
     "x": "x.svg",
+    "mastodon": "mastodon.svg",
     "bluesky": "bluesky.svg",
     "instagram": "instagram.svg",
     "threads": "threads.svg",
